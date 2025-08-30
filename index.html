@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arun K Philip Portfolio</title>
+  <meta name="viewport" content="width=1440">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid p-0">
+      <span class="navbar-brand">Arun K Philip</span>
+      <div class="ms-auto">
+        <ul class="navbar-nav flex-row align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-banner">
+    <div class="ellipse1"></div>
+    <img src="uploads/photo main.png" class="profile-img" alt="profile">
+    <div class="headline">
+      Hi, I am<br>Arun K Philip
+    </div>
+    <div class="subtext">
+      Tech Enthusiast
+    </div>
+    <a href="uploads/ARUN_K_PHILIP_RESUME.pdf" class="download-btn" download>Download CV</a>
+  </div>
+
+  <div id="about" class="container">
+    <div class="section-title">About</div>
+    <div class="about-text">
+      A developer passionate about coding and creating simple, impactful solutions.
+I work with Python, SQL, HTML, CSS, JavaScript, and Bootstrap to bring ideas to life.
+Always curious and eager to learn, build, and grow in the world of technology.
+    </div>
+    <div class="row about-icons justify-content-center">
+      <div class="col-md-3 icon-box">
+        <div class="circle">
+          <div class="dot"></div>
+        </div>
+        <div class="icon-title">Full Name</div>
+        <div class="icon-desc">Your name goes here</div>
+      </div>
+      <div class="col-md-3 icon-box">
+        <div class="circle">
+          <div class="dot"></div>
+        </div>
+        <div class="icon-title">Email Address</div>
+        <div class="icon-desc">Your email goes here</div>
+      </div>
+      <div class="col-md-3 icon-box">
+        <div class="circle">
+          <div class="dot"></div>
+        </div>
+        <div class="icon-title">Linkedin</div>
+        <div class="icon-desc">Your email goes here</div>
+      </div>
+      <div class="col-md-3 icon-box">
+        <div class="circle">
+          <div class="dot"></div>
+        </div>
+        <div class="icon-title">Phone</div>
+        <div class="icon-desc">Your name goes here</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="container whatido-section">
+    <div class="section-title">What i do</div>
+    <div class="row whatido-cards justify-content-center">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="icon">
+            <svg width="28" height="28" fill="none"><rect width="28" height="28" rx="6" stroke="#27AE60" stroke-width="2"/></svg>
+          </div>
+          Python + SQL
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="icon">
+            <svg width="28" height="28" fill="none"><rect width="28" height="28" rx="6" stroke="#27AE60" stroke-width="2"/></svg>
+          </div>
+          Web Development
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="icon">
+            <svg width="28" height="28" fill="none"><rect width="28" height="28" rx="6" stroke="#27AE60" stroke-width="2"/></svg>
+          </div>
+          Web Design
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container skills-section">
+    <div class="section-title">My Skills</div>
+    <div class="skills-bar">
+      <div class="skill-box">
+        <div class="percent">30%</div>
+        <div class="skill">Python + SQL</div>
+      </div>
+      <div class="skill-box">
+        <div class="percent">30%</div>
+        <div class="skill">HTML CSS JS</div>
+      </div>
+      <div class="skill-box">
+        <div class="percent">20%</div>
+        <div class="skill">JAVASCRIPT</div>
+      </div>
+      <div class="skill-box">
+        <div class="percent">20%</div>
+        <div class="skill">Excel</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="container contact-section">
+    <div class="section-title">Get in touch</div>
+    <form id="contactForm" style="max-width: 800px; margin: 0 auto;">
+      <div class="row mb-3">
+        <div class="col-6">
+          <label class="form-label"></label>
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="col-6">
+          <label class="form-label"></label>
+          <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-6">
+          <label class="form-label"></label>
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+        <div class="col-6">
+          <label class="form-label"></label>
+          <input type="text" class="form-control" placeholder="Phone Number">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"></label>
+        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn">Submit now</button>
+      </div>
+    </form>
+    <div id="formResult" style="color:#27AE60; margin-top:20px; display:none;"></div>
+  </div>
+
+  <div class="footer">
+    © ArunKPhilip 2025
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

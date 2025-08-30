@@ -1,0 +1,253 @@
+body {
+  background: #171717;
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: #fff;
+  min-width: 1440px;
+}
+.navbar, .custom-navbar {
+  background: #181818 !important;
+  box-shadow: none;
+  border: none;
+  min-height: 80px;
+  margin-bottom: 0;
+}
+.navbar-brand, .custom-navbar .navbar-brand {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff !important;
+  margin-left: 80px;
+  letter-spacing: 0;
+}
+.custom-navbar .navbar-nav {
+  margin-right: 80px;
+  gap: 32px;
+}
+.custom-navbar .nav-link {
+  color: #fff !important;
+  font-size: 16px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-weight: 400;
+  padding-left: 0;
+  padding-right: 0;
+  transition: color 0.2s;
+}
+.custom-navbar .nav-link.active,
+.custom-navbar .nav-link:focus,
+.custom-navbar .nav-link:hover {
+  color: #fff !important;
+  text-decoration: none;
+  background: none;
+}
+@media (max-width: 991px) {
+  .custom-navbar .navbar-brand,
+  .custom-navbar .navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 0;
+  }
+  .custom-navbar .nav-link {
+    font-size: 15px;
+  }
+}
+.main-banner {
+  position: relative;
+  min-height: 800px;
+  padding-top: 60px;
+}
+.ellipse1 {
+  position: absolute;
+  right: 120px;
+  top: 140px;
+  width: 457px;
+  height: 457px;
+  background: rgba(29,28,28,0.2);
+  border-radius: 50%;
+  border: 1px solid #202020;
+  z-index: 0;
+}
+.profile-img {
+  position: absolute;
+  right: 120px;
+  top: 140px;
+  width: 456px;
+  height: 456px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+  border: 0;
+  background: #222;
+}
+.headline {
+  position: absolute;
+  left: 120px;
+  top: 220px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+}
+.subtext {
+  position: absolute;
+  left: 120px;
+  top: 340px;
+  font-size: 20px;
+  color: #828282;
+  font-weight: 500;
+}
+.download-btn {
+  position: absolute;
+  left: 120px;
+  top: 400px;
+  width: 160px;
+  height: 48px;
+  background: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.about-text {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto 40px auto;
+  max-width: 700px;
+}
+.about-icons {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.about-icons .icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.about-icons .circle {
+  background: #212121;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.about-icons .dot {
+  background: #27AE60;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+.about-icons .icon-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.about-icons .icon-desc {
+  color: #fff;
+  font-size: 16px;
+}
+.whatido-section {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.whatido-cards .card {
+  background: #212121;
+  color: #535353;
+  font-size: 28px;
+  font-weight: 500;
+  min-height: 180px;
+  border: none;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 40px;
+  position: relative;
+  transition: border 0.2s;
+}
+.whatido-cards .card .icon {
+  background: none;
+  border: 1.5px solid #27AE60;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatido-cards .card:hover {
+  border-bottom: 3px solid #27AE60;
+  color: #27AE60;
+  background: #232323;
+}
+.skills-section {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.skills-bar {
+  background: #212121;
+  border: 1px solid #333;
+  padding: 40px 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-bar .skill-box {
+  flex: 1;
+  text-align: center;
+}
+.skills-bar .percent {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.skills-bar .skill {
+  color: #27AE60;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.contact-section {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contact-section .form-label {
+  color: #4F4F4F;
+}
+.footer {
+  color: #4F4F4F;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .main-banner .profile-img,
+  .main-banner .ellipse1 {
+    display: none;
+  }
+  .main-banner {
+    min-height: 400px;
+  }
+}
