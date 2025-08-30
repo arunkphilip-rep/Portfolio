@@ -4,14 +4,14 @@ body {
   color: #fff;
   min-width: 1440px;
 }
-.navbar, .custom-navbar {
+.navbar, .navbar2 {
   background: #181818 !important;
   box-shadow: none;
   border: none;
   min-height: 80px;
   margin-bottom: 0;
 }
-.navbar-brand, .custom-navbar .navbar-brand {
+.navbar-brand, .navbar2 .navbar-brand {
   font-family: 'DM Sans', Arial, sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -19,11 +19,11 @@ body {
   margin-left: 80px;
   letter-spacing: 0;
 }
-.custom-navbar .navbar-nav {
+.navbar2 .navbar-nav {
   margin-right: 80px;
   gap: 32px;
 }
-.custom-navbar .nav-link {
+.navbar2 .nav-link {
   color: #fff !important;
   font-size: 16px;
   font-family: 'DM Sans', Arial, sans-serif;
@@ -32,30 +32,30 @@ body {
   padding-right: 0;
   transition: color 0.2s;
 }
-.custom-navbar .nav-link.active,
-.custom-navbar .nav-link:focus,
-.custom-navbar .nav-link:hover {
+.navbar2 .nav-link.active,
+.navbar2 .nav-link:focus,
+.navbar2 .nav-link:hover {
   color: #fff !important;
   text-decoration: none;
   background: none;
 }
 @media (max-width: 991px) {
-  .custom-navbar .navbar-brand,
-  .custom-navbar .navbar-nav {
+  .navbar2 .navbar-brand,
+  .navbar2 .navbar-nav {
     margin-left: 0;
     margin-right: 0;
     gap: 0;
   }
-  .custom-navbar .nav-link {
+  .navbar2 .nav-link {
     font-size: 15px;
   }
 }
-.main-banner {
+.banner {
   position: relative;
   min-height: 800px;
   padding-top: 60px;
 }
-.ellipse1 {
+.ellipse {
   position: absolute;
   right: 120px;
   top: 140px;
@@ -66,7 +66,7 @@ body {
   border: 1px solid #202020;
   z-index: 0;
 }
-.profile-img {
+.profile {
   position: absolute;
   right: 120px;
   top: 140px;
@@ -78,7 +78,7 @@ body {
   border: 0;
   background: #222;
 }
-.headline {
+.title {
   position: absolute;
   left: 120px;
   top: 220px;
@@ -87,7 +87,7 @@ body {
   color: #fff;
   line-height: 1.1;
 }
-.subtext {
+.subtitle {
   position: absolute;
   left: 120px;
   top: 340px;
@@ -95,7 +95,7 @@ body {
   color: #828282;
   font-weight: 500;
 }
-.download-btn {
+.download {
   position: absolute;
   left: 120px;
   top: 400px;
@@ -114,31 +114,31 @@ body {
   margin-top: 10px;
   transition: background 0.2s, color 0.2s;
 }
-.section-title {
+.sectiontitle {
   text-align: center;
   font-size: 48px;
   font-weight: 700;
   margin-top: 80px;
   margin-bottom: 30px;
 }
-.about-text {
+.abouttext {
   color: #fff;
   text-align: center;
   font-size: 18px;
   margin: 0 auto 40px auto;
   max-width: 700px;
 }
-.about-icons {
+.abouticons {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.about-icons .icon-box {
+.abouticons .iconbox {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
 }
-.about-icons .circle {
+.abouticons .circle {
   background: #212121;
   border-radius: 50%;
   width: 62px;
@@ -146,7 +146,7 @@ body {
   position: relative;
   margin-bottom: 10px;
 }
-.about-icons .dot {
+.abouticons .dot {
   background: #27AE60;
   border-radius: 50%;
   width: 12px;
@@ -155,21 +155,21 @@ body {
   left: 25px;
   top: 25px;
 }
-.about-icons .icon-title {
+.abouticons .icontitle {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
   margin-top: 10px;
 }
-.about-icons .icon-desc {
+.abouticons .icondesc {
   color: #fff;
   font-size: 16px;
 }
-.whatido-section {
+.whatido {
   margin-top: 80px;
   margin-bottom: 40px;
 }
-.whatido-cards .card {
+.whatidocards .card {
   background: #212121;
   color: #535353;
   font-size: 28px;
@@ -182,7 +182,7 @@ body {
   position: relative;
   transition: border 0.2s;
 }
-.whatido-cards .card .icon {
+.whatidocards .card .icon {
   background: none;
   border: 1.5px solid #27AE60;
   border-radius: 10px;
@@ -193,16 +193,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-.whatido-cards .card:hover {
+.whatidocards .card:hover {
   border-bottom: 3px solid #27AE60;
   color: #27AE60;
   background: #232323;
 }
-.skills-section {
+.skills {
   margin-top: 80px;
   margin-bottom: 40px;
 }
-.skills-bar {
+.skillsbar {
   background: #212121;
   border: 1px solid #333;
   padding: 40px 0;
@@ -211,28 +211,28 @@ body {
   justify-content: center;
   align-items: center;
 }
-.skills-bar .skill-box {
+.skillsbar .skillbox {
   flex: 1;
   text-align: center;
 }
-.skills-bar .percent {
+.skillsbar .percent {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.skills-bar .skill {
+.skillsbar .skill {
   color: #27AE60;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.contact-section {
+.contact {
   margin-top: 80px;
   margin-bottom: 40px;
   text-align: center;
 }
-.contact-section .form-label {
+.contact .formlabel {
   color: #4F4F4F;
 }
 .footer {
@@ -243,11 +243,11 @@ body {
   margin-bottom: 20px;
 }
 @media (max-width: 1200px) {
-  .main-banner .profile-img,
-  .main-banner .ellipse1 {
+  .banner .profile,
+  .banner .ellipse {
     display: none;
   }
-  .main-banner {
+  .banner {
     min-height: 400px;
   }
 }
