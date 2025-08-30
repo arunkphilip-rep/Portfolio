@@ -1,3 +1,10 @@
+// Show loader for 3 seconds then hide
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("loader").style.display = "none";
+  }, 3000); // 3000ms = 3s
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   var form = document.getElementById('contactForm');
   var result = document.getElementById('formResult');
